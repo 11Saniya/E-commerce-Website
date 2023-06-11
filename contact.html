@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home_page E-commerce</title>
+    <title>E-commerce Website</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -16,12 +17,13 @@
         <a href="#"><img src="resources/images/logo.png" class="logo" alt="logo"></a>
         <div>
             <ul id="navbar">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a  href="blog.html">Blog</a></li>
                 <li><a  href="about.html">About</a></li>
                 <li><a class="active" href="contact.html">Contact</a></li>
-                <li><a href="cart.html" class="logo"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <li><a href="login.html">SignUp</a> </li>
+                <li id="lg-bag"><a href="cart.html" class="logo"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <div id="mobile">
@@ -68,13 +70,13 @@
     <form action="">
         <span>LEAVE A MESSAGE</span>
         <h2>We love to hear from you</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="E-mail">
-        <input type="text" placeholder="Subject">
-        <textarea name="" id="" cols="30" rows="10" pl
-        Your Message></textarea>
-        <button class="normal">Submit</button>
-    </form>
+        <input type="text" placeholder="Your Name" id="name">
+        <input type="text" placeholder="E-mail" id="e-mail">
+        <input type="text" placeholder="Subject" id="subject">
+        <textarea name="" id="" cols="30" rows="10" placeholder="feedback"
+         id="feedback"></textarea>
+         <button type="button" class="normal" onclick="popup()">Submit</button>   
+        </form> 
 
    <div class="people">
  <div>
@@ -100,7 +102,10 @@
     </div>
     <div class="form">
      <input type="text" placeholder="Your email address">
- <button class="normal">Sign Up</button>  
+     <a href="login.html">
+        <button type="button" class="normal" >Sign Up
+        </a>
+    </button>  
  </div>
  </section>
 
@@ -115,10 +120,15 @@
                 <div class="follow">
                     <h4>Follow Us</h4>
                     <div class="icon">
-                        <i class="fab fa-facebook-f "></i>
-                        <i class="fab fa-twitter "></i>
-                        <i class="fab fa-instagram "></i>
-                        <i class="fab fa-youtube "></i>
+                        <a href="mailto:saniyaanjum142115@gmail.com" target="_blank">
+                            <i class="fa fa-envelope-open "></i>
+                        </a>
+                        <a href="https://www.instagram.com/kaira_designer_store/?hl=en" target="_blank">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+                       <a href="https://www.youtube.com/@JASMINUM" target="_blank">
+                           <i class="fab fa-youtube "></i>
+                       </a>
                     </div>
                 </div>
             </div>
@@ -154,6 +164,10 @@
         <p>@ 2023, HTML CSS Ecommerce project</p>
     </div> -->
     </footer>
+
+    <script src="index.js"> </script>
+    <script src="https;//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
